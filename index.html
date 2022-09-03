@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marko Gutierro</title>
+    <link rel="shortcut icon" type="image/jpg" href="./images/mouse_favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navigation-bar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand navigation-item" href="#hero">Marko G</a>
+            <button class="navbar-toggler white-hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link navigation-item" href="#about-background">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navigation-item" href="#project">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navigation-item" href="#contact">Contact</a>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div id="hero" class="row align-items-center">
+            <div class="col">
+                <h1>Marko Gutierro</h1>
+                <p id="hero-text">Professional Web Developer</p>
+                <button class="about-button"><a id="learn-button" href="#about-background">Learn More</a></button>
+            </div>
+        </div>
+        <div id="about-background" class="row align-items-center">
+            <div class="col-md-5">
+                <h2>Who's This Guy?</h2>
+                <img class="marko-pic" src="./images/marko.jpg" alt="Picture of Marko">
+                <p> Looks like you found my corner of the internet. I am a passionate
+                    and driven web developer who loves making websites that are eye catching.
+                    Any website I make is sure to be responsive, intuitive, and dynamic.
+                </p>
+                <img class="marko-pic marko-pic-desktop" src="./images/marko.jpg" alt="Picture of Marko">
+            </div>
+            <div class="col-md-7">
+                <h2>Good Websites Are Important</h2>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carousel-container">
+                                <div class="carousel-text">
+                                    <h3>First Impressions Are Crucial</h3>
+                                    <p>
+                                        It only takes seconds for visitors to form an opinion
+                                        on a business based on the website. By having a clean
+                                        and professional website it will ensure that visitors will
+                                        always have a positive first impression.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-container">
+                                <div class="carousel-text">
+                                    <h3>Establishing Credibility</h3>
+                                    <p>
+                                        A good website will inform visitors on what a
+                                        business stands for and what that business does. This way,
+                                        visitors will feel comfortable with the business having
+                                        been properly informed on the ideals of the business.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-container">
+                                <div class="carousel-text">
+                                    <h3>Marketing</h3>
+                                    <p>
+                                        A website is an easy way to attract new customers
+                                        and keep current customers coming back.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="project" class="row align-items-center">
+            <h2>Example Past Project</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="card">
+                            <img class="card-img-top" src="./images/newharvest_old.png"
+                                alt="Picture of Old New Harvest Website">
+                            <div class="card-body">
+                                <h3 class="card-title">Old Website</h3>
+                                <p class="card-text">Before I fixed this website it was visually unappealing and it
+                                    was messy. This made the website have an unprofessional look and made it hard
+                                    to navigate.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                        <p class="right-arrow arrow"><i>&#8594</i></p>
+                        <p class="down-arrow arrow"><i>&#8595</i></p>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <img class="card-img-top" src="./images/newharvest_new.png"
+                                alt="Picture of Old New Harvest Website">
+                            <div class="card-body">
+                                <h3 class="card-title">New Website</h3>
+                                <p class="card-text">After I fixed the website it gave the business a professional
+                                    look. The website is now visually appealing and easy to use.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="row align-items-center">
+        <div class="col-md contact-header">
+            <h2 class="contact-header">Contact</h2>
+            <p>Let's Make Something Amazing! <span style="font-size: 2.5rem;">&#9786;</span></p>
+        </div>
+        <div class="col-md">
+            <form action="POST" data-netlify="true">
+                <p>
+                    <label for="fullname">Full Name <span style="color:red">*</span></label>
+                    <br>
+                    <input id="fullname" type="text" placeholder="Full Name" name="fullname" required>
+                </p>
+                <p>
+                    <label for="email">Email <span style="color:red">*</span></label>
+                    <br>
+                    <input id="email" type="text" placeholder="Email" name="email" required>
+                </p>
+                <p>
+                    <label for="message">Message <span style="color:red">*</span></label>
+                    <br>
+                    <textarea id="message" name="message" placeholder="I am excited to hear from you!" rows="5"
+                        cols="25" required></textarea>
+                </p>
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+        </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
