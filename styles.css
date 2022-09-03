@@ -4,6 +4,7 @@
 }
 
 h2 {
+  margin: 10px;
   font-size: 1.25rem;
 }
 
@@ -35,21 +36,19 @@ textarea {
 }
 
 #about-background {
-  height: 100vh;
   width: auto;
   background: linear-gradient(rgb(135, 64, 135), rgb(248, 50, 50));
 }
 
-#contact {
-  height: 100vh;
-  width: auto;
-  background: linear-gradient(to bottom right, #2AF598,#08AEEA)
-}
-
 #project {
-  height: 100vh;
   width: auto;
   background: linear-gradient(to bottom left, #f79d00, #64f38c);
+}
+
+#contact {
+  min-height: 75vh;
+  width: auto;
+  background: linear-gradient(to bottom right, #2AF598,#08AEEA)
 }
 
 /* General Classes */
@@ -120,7 +119,7 @@ textarea {
 }
 
 .carousel-item {
-  height: 15rem;
+  min-height: 50vh;
   color: white;
   position: relative;
 }
@@ -129,7 +128,7 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 15rem;
+  min-height: 50vh;
 }
 
 .carousel-text {
@@ -140,6 +139,7 @@ textarea {
 /*work page classes*/
 .card {
   margin: auto;
+  margin-bottom: 10px;
 }
 
 .arrow {
@@ -167,6 +167,11 @@ textarea {
   border-radius: .375rem;
   font-weight: 600;
 }
+
+/* Contact Classes */
+  .submit-button {
+    margin-bottom: 10px;
+  }
 
 /*animation for home page */
 @keyframes gradient {

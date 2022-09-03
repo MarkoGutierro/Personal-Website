@@ -1,5 +1,10 @@
 /* X-Small devices (portrait phones, less than 576px)
    No media query for `xs` since this is the default in Bootstrap */
+@media (min-width: 0px) {
+    html {
+        font-size: 115%;
+    }
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -36,15 +41,26 @@
     }
 }
 
+/* Hero Style Layout For Desktop */
+
+@media (min-width: 992px) {
+
+    #about-background,
+    #project,
+    #contact {
+        height: 100vh;
+    }
+}
+
 /* Change Arrow */
 
-@media (min-width: 576px) {
+@media (min-width: 992px) {
     .right-arrow {
         display: initial;
     }
 }
 
-@media (min-width: 576px) {
+@media (min-width: 992px) {
     .down-arrow {
         display: none;
     }
@@ -76,7 +92,7 @@
 /* Scaling For Phone Sized Text In The Carousel And In Cards */
 
 @media (max-width: 576px) {
-    h3 + p {
+    h3+p {
         font-size: 75%;
     }
 }
@@ -84,13 +100,15 @@
 /* Scaling For Cards */
 
 @media (min-width: 0px) {
-    .card-body > h3 + p, .card-body > h3{
+
+    .card-body>h3+p,
+    .card-body>h3 {
         font-size: 75%;
     }
 }
 
 @media (max-width: 576px) {
-    .card-img-top{
+    .card-img-top {
         max-height: 25vh;
     }
 }
@@ -98,10 +116,9 @@
 /* Scaling For Contact Page */
 
 @media (min-width: 992px) {
-    input, textarea {
+
+    input,
+    textarea {
         font-size: 75%;
     }
 }
-
-
-
