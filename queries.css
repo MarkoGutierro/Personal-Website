@@ -52,20 +52,6 @@
     }
 }
 
-/* Change Arrow */
-
-@media (min-width: 992px) {
-    .right-arrow {
-        display: initial;
-    }
-}
-
-@media (min-width: 992px) {
-    .down-arrow {
-        display: none;
-    }
-}
-
 /* Scaling For Picture Of Me (Marko) On About Page*/
 
 @media (min-width: 992px) {
@@ -94,6 +80,20 @@
 @media (max-width: 576px) {
     h3+p {
         font-size: 75%;
+    }
+}
+
+/* Change Arrow */
+
+@media (min-width: 992px) {
+    .right-arrow {
+        display: initial;
+    }
+}
+
+@media (min-width: 992px) {
+    .down-arrow {
+        display: none;
     }
 }
 
