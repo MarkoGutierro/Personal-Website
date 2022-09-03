@@ -1,0 +1,107 @@
+/* X-Small devices (portrait phones, less than 576px)
+   No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    html {
+        font-size: 125%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    html {
+        font-size: 150%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    html {
+        font-size: 175%;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    html {
+        font-size: 175%;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    html {
+        font-size: 175%;
+    }
+}
+
+/* Change Arrow */
+
+@media (min-width: 576px) {
+    .right-arrow {
+        display: initial;
+    }
+}
+
+@media (min-width: 576px) {
+    .down-arrow {
+        display: none;
+    }
+}
+
+/* Scaling For Picture Of Me (Marko) On About Page*/
+
+@media (min-width: 992px) {
+    .marko-pic {
+        display: none;
+        margin: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .marko-pic-desktop {
+        display: initial;
+    }
+}
+
+@media (min-width: 992px) {
+    .marko-pic-desktop {
+        display: initial;
+        height: 175px;
+        width: 175px;
+    }
+}
+
+/* Scaling For Phone Sized Text In The Carousel And In Cards */
+
+@media (max-width: 576px) {
+    h3 + p {
+        font-size: 75%;
+    }
+}
+
+/* Scaling For Cards */
+
+@media (min-width: 0px) {
+    .card-body > h3 + p, .card-body > h3{
+        font-size: 75%;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-img-top{
+        max-height: 25vh;
+    }
+}
+
+/* Scaling For Contact Page */
+
+@media (min-width: 992px) {
+    input, textarea {
+        font-size: 75%;
+    }
+}
+
+
+

@@ -3,37 +3,16 @@
   text-align: center;
 }
 
-h1 {
-  font-size: 4rem;
-}
-
 h2 {
-  margin-top: 10px;
   font-size: 1.25rem;
 }
 
 h3 {
-  font-size: .75rem;
-}
-
-h3+p {
-  font-size: .75rem;
+  font-size: 1rem;
 }
 
 p {
-  font-size: .8rem;
-}
-
-form>p {
-  font-size: .75rem;
-}
-
-li {
-  font-size: .75rem;
-}
-
-label {
-  text-align: left;
+  font-size: 1rem;
 }
 
 input {
@@ -55,15 +34,6 @@ textarea {
   animation: gradient 15s ease infinite;
 }
 
-#hero-text {
-  font-size: 2rem;
-}
-
-#learn-button {
-  color: black;
-  text-decoration: none;
-}
-
 #about-background {
   height: 100vh;
   width: auto;
@@ -82,6 +52,17 @@ textarea {
   background: linear-gradient(to bottom left, #f79d00, #64f38c);
 }
 
+/* General Classes */
+.button-general {
+  color: black;
+  text-decoration: none;
+}
+
+.button-general:hover {
+  color: black;
+  text-decoration: none;
+}
+
 /*nav classes */
 .navigation-bar {
   width: 80%;
@@ -90,6 +71,7 @@ textarea {
 }
 
 .navigation-item {
+  font-size: 1rem;
   text-align: right;
   margin-right: .75rem;
   color: whitesmoke;
@@ -107,7 +89,6 @@ textarea {
 
 /* home page classes */
 .about-button {
-  font-size: 1.5rem;
   border-radius: 0.375rem;
   background-color: transparent;
   transition-property: font-size;
@@ -115,7 +96,7 @@ textarea {
 }
 
 .about-button:hover {
-  font-size: 1.75rem;
+  font-size: 125%;
 }
 
 /*about page classes*/
@@ -133,8 +114,8 @@ textarea {
 
 .marko-pic-desktop {
   display: none;
-  height: 200px;
-  width: 200px;
+  height: 175px;
+  width: 175px;
   float: none;
 }
 
@@ -176,7 +157,15 @@ textarea {
 }
 
 .contact-header {
-  font-size: 5rem;
+  font-size: 3.5rem;
+}
+
+.visit-button {
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: .375rem;
+  font-weight: 600;
 }
 
 /*animation for home page */
@@ -193,84 +182,3 @@ textarea {
     background-position: 0% 50%;
   }
 }
-
-/*media queries section*/
-
-/* General Scaling Whole Website */
-@media (min-width: 30em) {
-  html {
-    font-size: 125%;
-  }
-}
-
-@media (min-width: 40em) {
-  html {
-    font-size: 150%;
-  }
-}
-
-@media (min-width: 50em) {
-  html {
-    font-size: 175%;
-  }
-}
-
-@media (min-width: 60em) {
-  html {
-    font-size: 200%;
-  }
-}
-
-/* Scaling For Carousel Text */
-@media (min-width: 768px) {
-
-  h3+p, h3 {
-    font-size: 50%;
-  }
-}
-
-/* Scaling For Picture */
-
-@media (min-width: 768px) {
-  .marko-pic {
-    display: none;
-    margin: 0;
-  }
-}
-
-@media (min-width: 768px) {
-  .marko-pic-desktop {
-    display: initial;
-  }
-}
-
-@media (min-width: 768px) {
-  .right-arrow {
-    display: initial;
-  }
-}
-
-@media (min-width: 768px) {
-  .down-arrow {
-    display: none;
-  }
-}
-
-/* Scaling Portfolio Cards */
-
-@media (max-width: 768px) {
-  .card{
-    width: 75%;
-  }
-  .card-img-top {
-    max-height: 20vh;
-    object-fit: fill;
-  }
-}
-
-@media (min-width: 40em) {
-  .card-body > p, h3 {
-    font-size: 60%;
-  }
-}
-

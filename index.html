@@ -11,14 +11,16 @@
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
+    <link href="queries.css" rel="stylesheet">
 </head>
 
 <body>
     <nav class="navbar navigation-bar navbar-expand-lg fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand navigation-item" href="#hero">Marko G</a>
-            <button class="navbar-toggler white-hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler white-hamburger" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -31,7 +33,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link navigation-item" href="#contact">Contact</a>
-                    </li> 
+                    </li>
                 </ul>
             </div>
         </div>
@@ -41,20 +43,20 @@
             <div class="col">
                 <h1>Marko Gutierro</h1>
                 <p id="hero-text">Professional Web Developer</p>
-                <button class="about-button"><a id="learn-button" href="#about-background">Learn More</a></button>
+                <button class="about-button"><a class="button-general" href="#about-background">Learn More</a></button>
             </div>
         </div>
         <div id="about-background" class="row align-items-center">
-            <div class="col-md-5">
+            <div class="col-lg-5">
                 <h2>Who's This Guy?</h2>
                 <img class="marko-pic" src="./images/marko.jpg" alt="Picture of Marko">
-                <p> Looks like you found my corner of the internet. I am a passionate
+                <p class="about-text"> Looks like you found my corner of the internet. I am a passionate
                     and driven web developer who loves making websites that are eye catching.
                     Any website I make is sure to be responsive, intuitive, and dynamic.
                 </p>
                 <img class="marko-pic marko-pic-desktop" src="./images/marko.jpg" alt="Picture of Marko">
             </div>
-            <div class="col-md-7">
+            <div class="col-lg-7">
                 <h2>Good Websites Are Important</h2>
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                     <div class="carousel-indicators">
@@ -97,7 +99,8 @@
                                 <div class="carousel-text">
                                     <h3>Marketing</h3>
                                     <p>
-                                        A website is an easy way to attract new customers
+                                        A website is ALWAYS online. This means
+                                        websites are an easy way to attract new customers
                                         and keep current customers coming back.
                                     </p>
                                 </div>
@@ -121,12 +124,14 @@
             <h2>Example Past Project</h2>
             <div class="container">
                 <div class="row">
-                    <div class="col-md">
+                    <div class="col-sm">
                         <div class="card">
                             <img class="card-img-top" src="./images/newharvest_old.png"
                                 alt="Picture of Old New Harvest Website">
                             <div class="card-body">
-                                <h3 class="card-title">Old Website</h3>
+                                <h3 class="card-title"><button class="visit-button"><a class="button-general"
+                                            href="https://newharvestrestaurant.wixsite.com/newharvestrestaurant">Old
+                                            Website</a></button></h3>
                                 <p class="card-text">Before I fixed this website it was visually unappealing and it
                                     was messy. This made the website have an unprofessional look and made it hard
                                     to navigate.
@@ -134,16 +139,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-1">
+                    <div class="col-sm-1">
                         <p class="right-arrow arrow"><i>&#8594</i></p>
                         <p class="down-arrow arrow"><i>&#8595</i></p>
                     </div>
-                    <div class="col-md">
+                    <div class="col-sm">
                         <div class="card">
                             <img class="card-img-top" src="./images/newharvest_new.png"
                                 alt="Picture of Old New Harvest Website">
                             <div class="card-body">
-                                <h3 class="card-title">New Website</h3>
+                                <h3 class="card-title"><button class="visit-button"><a class="button-general"
+                                            href="https://newharvestct.com">New
+                                            Website</a></button></h3>
                                 <p class="card-text">After I fixed the website it gave the business a professional
                                     look. The website is now visually appealing and easy to use.
                                 </p>
