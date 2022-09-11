@@ -42,22 +42,24 @@
         <div id="hero" class="row align-items-center">
             <div class="col">
                 <h1>Marko Gutierro</h1>
-                <p id="hero-text">Professional Web Developer</p>
+                <p>Professional Web Developer</p>
                 <button class="about-button"><a class="button-general" href="#about-background">Learn More</a></button>
             </div>
         </div>
-        <div id="about-background" class="row align-items-center">
+        <div id="about-background" class="row">
+            <h2>About</h2>
             <div class="col-lg-5">
-                <h2>Who's This Guy?</h2>
+                <h3>Who's This Guy?</h3>
                 <img class="marko-pic" src="./images/marko.jpg" alt="Picture of Marko">
-                <p class="about-text"> Looks like you found my corner of the internet. I am a passionate
-                    and driven web developer who loves making websites that are eye catching.
-                    Any website I make is sure to be responsive, intuitive, and dynamic.
+                <p class="about-text"> Looks like you found my corner of the internet. I am a
+                    passionate</span> and <span class="purple-span">driven</span>
+                    web developer who loves making websites that are <span class="purple-span">eye catching</span>
+                    Any website I make is sure to be responsive, dynamic, and <span class="purple-span">intuitive</span>
                 </p>
                 <img class="marko-pic marko-pic-desktop" src="./images/marko.jpg" alt="Picture of Marko">
             </div>
             <div class="col-lg-7">
-                <h2>Good Websites Are Important</h2>
+                <h3>Good Websites Matter!</h3>
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -71,7 +73,7 @@
                         <div class="carousel-item active">
                             <div class="carousel-container">
                                 <div class="carousel-text">
-                                    <h3>First Impressions Are Crucial</h3>
+                                    <h4>First Impressions Are Crucial</h4>
                                     <p>
                                         It only takes seconds for visitors to form an opinion
                                         on a business based on the website. By having a clean
@@ -84,7 +86,7 @@
                         <div class="carousel-item">
                             <div class="carousel-container">
                                 <div class="carousel-text">
-                                    <h3>Establishing Credibility</h3>
+                                    <h4>Establishing Credibility</h4>
                                     <p>
                                         A good website will inform visitors on what a
                                         business stands for and what that business does. This way,
@@ -97,7 +99,7 @@
                         <div class="carousel-item">
                             <div class="carousel-container">
                                 <div class="carousel-text">
-                                    <h3>Marketing</h3>
+                                    <h4>Marketing</h4>
                                     <p>
                                         A website is ALWAYS online. This means
                                         websites are an easy way to attract new customers
@@ -160,34 +162,33 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div id="contact" class="row align-items-center">
-        <div class="col-md contact-header">
-            <h2 class="contact-header">Contact</h2>
-            <p>Let's Make Something Amazing! <span style="font-size: 2.5rem;">&#9786;</span></p>
+        <div id="contact" class="row align-items-center">
+            <div class="col-md">
+                <h2 class="contact-header">Contact</h2>
+                <p>Let's Make Something Amazing!<span style="font-size: 2.5rem;">&#9786;</span></p>
+            </div>
+            <div class="col-md">
+                <form action="POST" data-netlify="true">
+                    <p>
+                        <label for="fullname">Full Name <span style="color:red">*</span></label>
+                        <br>
+                        <input id="fullname" type="text" placeholder="Full Name" name="fullname" required>
+                    </p>
+                    <p>
+                        <label for="email">Email <span style="color:red">*</span></label>
+                        <br>
+                        <input id="email" type="text" placeholder="Email" name="email" required>
+                    </p>
+                    <p>
+                        <label for="message">Message <span style="color:red">*</span></label>
+                        <br>
+                        <textarea id="message" name="message" placeholder="I am excited to hear from you!" rows="5"
+                            cols="25" required></textarea>
+                    </p>
+                    <button class="submit-button">Submit</button>
+                </form>
+            </div>
         </div>
-        <div class="col-md">
-            <form action="POST" data-netlify="true">
-                <p>
-                    <label for="fullname">Full Name <span style="color:red">*</span></label>
-                    <br>
-                    <input id="fullname" type="text" placeholder="Full Name" name="fullname" required>
-                </p>
-                <p>
-                    <label for="email">Email <span style="color:red">*</span></label>
-                    <br>
-                    <input id="email" type="text" placeholder="Email" name="email" required>
-                </p>
-                <p>
-                    <label for="message">Message <span style="color:red">*</span></label>
-                    <br>
-                    <textarea id="message" name="message" placeholder="I am excited to hear from you!" rows="5"
-                        cols="25" required></textarea>
-                </p>
-                <button class="submit-button">Submit</button>
-            </form>
-        </div>
-    </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
@@ -195,5 +196,19 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        //navbar changes color on scroll
+        const nav = document.querySelector('nav');
+        let height = window.innerHeight - 1;
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY >= height) {
+                nav.classList.add('active-nav');
+            }
+            else {
+                nav.classList.remove('active-nav');
+            }
+        });
     </script>
 </body>

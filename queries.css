@@ -41,6 +41,13 @@
     }
 }
 
+/* Font Size Nav */
+@media (min-width: 0px) {
+    .navigation-item {
+        font-size: 65%;
+    }
+}
+
 /* Hero Style Layout For Desktop */
 
 @media (min-width: 992px) {
@@ -78,7 +85,7 @@
 /* Scaling For Phone Sized Text In The Carousel And In Cards */
 
 @media (max-width: 576px) {
-    h3+p {
+    h4+p {
         font-size: 75%;
     }
 }

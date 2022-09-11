@@ -3,13 +3,29 @@
   text-align: center;
 }
 
+body {
+  overflow-x: hidden;
+  background-color: black;
+  color: whitesmoke;
+}
+
+nav {
+  transition: 200ms ease-in-out background-color;
+}
+
 h2 {
-  margin: 10px;
-  font-size: 1.25rem;
+  padding-top: 80px;
+  margin-bottom: 5vh;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 1.5rem;
+  padding: 3%;
+}
+
+h4 {
+  font-size: 1.25rem;
 }
 
 p {
@@ -19,41 +35,44 @@ p {
 input {
   width: 75%;
   border-radius: 0.375rem;
+  color: #444549;
+  background-color: #1b242f;
+  border-color: #1b242f;
 }
 
 textarea {
   width: 75%;
   border-radius: 0.375rem;
+  color: #444549;
+  background-color: #1b242f;
+  border-color: #1b242f;
 }
 
 /* ids */
 #hero {
   height: 100vh;
   width: auto;
-  background: linear-gradient(to bottom right, #60005d, #487ece, #0CBABA);
-  background-size: 400% 400%;
-  animation: gradient 10s ease infinite;
+  background-image: url('./images/tangled.jpg');
+  background-size: 100% 100%;
 }
 
 #about-background {
+  min-height: 80vh;
   width: auto;
-  background: linear-gradient(rgb(135, 64, 135), rgb(248, 50, 50));
 }
 
 #project {
   width: auto;
-  background: linear-gradient(to bottom left, #f79d00, #64f38c);
 }
 
 #contact {
-  min-height: 75vh;
+  min-height: 100vh;
   width: auto;
-  background: linear-gradient(to bottom right, #2AF598,#08AEEA)
 }
 
 /* General Classes */
 .button-general {
-  color: black;
+  color: black;;
   text-decoration: none;
 }
 
@@ -62,9 +81,14 @@ textarea {
   text-decoration: none;
 }
 
+.purple-span {
+  color: rgb(157, 47, 230);
+}
+
 /*nav classes */
 .navigation-bar {
   width: 80%;
+  padding: 0px;
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -81,15 +105,22 @@ textarea {
   text-decoration: underline;
 }
 
+.active-nav {
+  background: rgba(118, 15, 187, 0.6);
+  backdrop-filter: blur(4px);
+
+}
+
 .white-hamburger {
   color: whitesmoke;
-  background-color: whitesmoke;;
+  background-color: whitesmoke;
+  ;
 }
 
 /* home page classes */
 .about-button {
   border-radius: 0.375rem;
-  border-color: black;
+  border-color: whitesmoke;
   background-color: transparent;
   transition-property: font-size;
   transition-duration: 1s;
@@ -120,7 +151,6 @@ textarea {
 }
 
 .carousel-item {
-  min-height: 50vh;
   color: white;
   position: relative;
 }
@@ -129,7 +159,8 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 50vh;
+  margin-top: 15px;
+  margin-bottom: 25px;
 }
 
 .carousel-text {
@@ -141,7 +172,23 @@ textarea {
 .card {
   margin: auto;
   margin-bottom: 10px;
+  background-color: black;
+  border-color: rgb(118, 15, 187);
+  border-width: thick;
 }
+
+.visit-button {
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: .375rem;
+  font-weight: 600;
+}
+
+h3.card-title{
+  padding: 0px;
+}
+/* Arrow On Work Page Classes */
 
 .arrow {
   text-align: center;
@@ -157,22 +204,22 @@ textarea {
   display: initial;
 }
 
+/* Contact Classes */
+
 .contact-header {
   font-size: 3.5rem;
+  color: rgb(118, 15, 187);
 }
 
-.visit-button {
-  padding: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: .375rem;
-  font-weight: 600;
+.submit-button {
+  font-weight: 100;
+  color: white;
+  border-color: white;
+  background-color: #1b242f;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 10px;
 }
-
-/* Contact Classes */
-  .submit-button {
-    margin-bottom: 10px;
-  }
 
 /*animation for home page */
 @keyframes gradient {
