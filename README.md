@@ -1,2 +1,2 @@
 # personal-website
- Website which acts as my portfolio and my funnel for freelance clients
+This website served as a portfolio and funnel for attracting freelance web design and development clients but is no longer in use.
